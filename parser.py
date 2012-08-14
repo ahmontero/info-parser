@@ -17,6 +17,7 @@
 
 from bs4 import BeautifulSoup
 import re
+import sys
 import urllib2
 
 URL = 'http://www.infojobs.net/ofertas-trabajo/informatica-telecomunicaciones/'
@@ -285,4 +286,5 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    status = main()
+    sys.exit(status)
